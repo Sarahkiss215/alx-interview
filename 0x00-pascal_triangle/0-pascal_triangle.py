@@ -1,8 +1,9 @@
-
 #!/usr/bin/python3
 '''
 Returns list showing the Pascal's triangle of n
 '''
+
+
 def pascal_triangle(n):
     '''returns empty list if n <= 0'''
     if n <= 0:
