@@ -12,7 +12,7 @@ def canUnlockAll(boxes):
         boxId = closed_boxes.pop()
         if not boxId or boxId >= bx or boxId < 0:
             continue
-        if boxId not in seen_boxes:
+        if boxId not in opened_boxes:
             closed_boxes = closed_boxes.union(boxes[boxId])
             opened_boxes.add(boxId)
     return bx == len(opened_boxes)
