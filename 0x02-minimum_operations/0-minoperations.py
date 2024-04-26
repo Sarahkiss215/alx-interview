@@ -12,6 +12,6 @@ def minOperations(n):
     while n > 1:
         while n % j == 0:
             i += j
-            i /= j
-        i += 1
-    return j
+            n /= j
+        j += 1
+    return i
